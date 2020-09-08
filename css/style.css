@@ -71,3 +71,9 @@ a:hover{
 body{
   background-color: #FFF5DF;
 }
+
+#wrapper{
+  margin: auto;
+  height: 95%;
+  width: 93%;
+}
