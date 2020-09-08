@@ -2,6 +2,76 @@
 
 }
 
-h1 {
+@import url("https://use.typekit.net/vxv4jde.css");
+h1{
+  font-family: degular-display,sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 96px;
+  color: #000000;
+}
 
+@import url("https://use.typekit.net/vxv4jde.css");
+h2{
+  font-family: degular-display,sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 48px;
+  color: #000000;
+}
+
+@import url("https://use.typekit.net/vxv4jde.css");
+h3{
+  font-family: degular-display,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  color: #000000;
+}
+
+@import url("https://use.typekit.net/vxv4jde.css");
+h4{
+  font-family: degular-display,sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+  color: #000000;
+}
+
+@import url("https://use.typekit.net/vxv4jde.css");
+p{
+  font-family: degular,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.4em;
+  color: #000000;
+}
+
+a:link{
+  text-decoration: underline;
+  color: #000000;
+}
+
+a:visited{
+  text-decoration: underline;
+  color: #58595B;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: #313695;
+}
+
+#listFont{
+  font-family: degular, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: #000000;
+}
+
+body{
+  background-color: #FFF5DF;
 }
