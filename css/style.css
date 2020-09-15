@@ -1,9 +1,12 @@
+body{
+  background-color: #FFF5DF;
+}
 
 @import url("https://use.typekit.net/vxv4jde.css");
 
 h1{
   font-family: "degular-display", Arial, sans-serif;
-  font-weight: 800;
+  font-weight: 400%;
   font-style: normal;
   font-size: 96px;
   color: #000000;
@@ -74,10 +77,6 @@ a:hover{
   font-style: normal;
   font-size: 18px;
   color: #000000;
-}
-
-body{
-  background-color: #FFF5DF;
 }
 
 #wrapper{
