@@ -93,10 +93,6 @@ a:hover{
   color: #000000;
 }
 
-body{
-  background-color: #FFF5DF;
-}
-
 #wrapper{
   margin: 0;
   height: 100%;
@@ -172,19 +168,19 @@ h2.container{
 
 @media screen and (max-width:750px){
   body{
-    background-color: HoneyDew;
+    background-color: OrangeRed;
   }
   h1{
-    color: #000000;
+    color: white;
   }
   h3{
-    color: #000000;
+    color: white;
   }
 }
 
 @media screen and (max-width:500px){
   body{
-    background-color: OldLace;
+    background-color: Blue;
   }
   h1{
     color: #000000;
