@@ -77,3 +77,30 @@ body{
   height: 95%;
   width: 93%;
 }
+
+button{
+  background-color: #FFF5DF;
+  border: 1px solid #000000;
+  color: #313695;
+  font-family: degular, sans-serif;
+  text-transform: none;
+  padding: 1em 2em 1em 2em;
+}
+
+#hover-button{
+  background-color: #FFF5DF;
+  border: 1px solid #000000;
+  color: #313695;
+  font-family: degular, sans-serif;
+  text-transform: none;
+  padding: 1em 2em 1em 2em;
+}
+
+#hover-button:hover{
+  background-color: #313695;
+  border: none;
+  color: #FFF5DF;
+  font-family: degular, sans-serif;
+  text-transform: none;
+  padding: 1em 2em 1em 2em;
+}
