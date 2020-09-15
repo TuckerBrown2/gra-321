@@ -1,7 +1,192 @@
-* {
 
+@import url("https://use.typekit.net/vxv4jde.css");
+
+h1{
+  font-family: "degular-display", Arial, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 96px;
+  color: #000000;
 }
 
-h1 {
+h2{
+  font-family: "degular-display", Arial, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 48px;
+  color: #000000;
+}
 
+h3{
+  font-family: "degular-display", Arial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  color: #000000;
+}
+
+h4{
+  font-family: "degular-display", Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+  color: #000000;
+}
+
+p{
+  font-family: "degular", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.4em;
+  color: #000000;
+}
+
+p.return{
+  font-family: "degular", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.4em;
+  color: #000000;
+}
+
+p.media-query{
+  font-family: "degular", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.4em;
+  color: #000000;
+  width: 100%;
+  margin: 0 auto;
+  top: 50px;
+  position: relative;
+}
+
+a:link{
+  text-decoration: underline;
+  color: #000000;
+}
+
+a:visited{
+  text-decoration: underline;
+  color: #58595B;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: #313695;
+}
+
+#listFont{
+  font-family: "degular", Arial,  sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: #000000;
+}
+
+body{
+  background-color: #FFF5DF;
+}
+
+#wrapper{
+  margin: 0;
+  height: 100%;
+  width: auto;
+  padding-left: 100px;
+  padding-top: 50px;
+}
+
+button{
+  background-color: #FFF5DF;
+  border: 1px solid #000000;
+  color: #313695;
+  font-family: "degular", sans-serif;
+  text-transform: none;
+  padding: 1em 2em 1em 2em;
+}
+
+#hover-button{
+  background-color: #FFF5DF;
+  border: 1px solid #000000;
+  color: #313695;
+  font-family: "degular", Arial, sans-serif;
+  text-transform: none;
+  padding: 1em 2em 1em 2em;
+}
+
+#hover-button:hover{
+  background-color: #313695;
+  border: none;
+  color: #FFF5DF;
+  font-family: "degular", Arial, sans-serif;
+  text-transform: none;
+  padding: 1em 2em 1em 2em;
+}
+
+#magazine-layout{
+  margin:auto;
+  width:850px;
+  height:auto;
+}
+
+.image-container{
+  height: 400px;
+  width: 615px;
+  background-image: url(../img/angsty-hallway.jpg);
+  background-size: cover;
+}
+
+h2.container{
+  font-family: "degular-display", Arial, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 48px;
+  color: #FFF5DF;
+}
+
+#container-text{
+  margin-left:50px;
+  margin-top:100px;
+}
+
+@media screen and (max-width: 1000px){
+  body{
+    background-color: OrangeRed;
+  }
+  h1{
+    color: #FFF5DF;
+  }
+  h3{
+    color: #FFF5DF;
+  }
+}
+
+@media screen and (max-width:750px){
+  body{
+    background-color: HoneyDew;
+  }
+  h1{
+    color: #000000;
+  }
+  h3{
+    color: #000000;
+  }
+}
+
+@media screen and (max-width:500px){
+  body{
+    background-color: OldLace;
+  }
+  h1{
+    color: #000000;
+  }
+  h3{
+    color: #000000;
+  }
 }

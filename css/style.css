@@ -1,5 +1,6 @@
 
 @import url("https://use.typekit.net/vxv4jde.css");
+
 h1{
   font-family: "degular-display", Arial, sans-serif;
   font-weight: 800;
@@ -8,7 +9,6 @@ h1{
   color: #000000;
 }
 
-@import url("https://use.typekit.net/vxv4jde.css");
 h2{
   font-family: "degular-display", Arial, sans-serif;
   font-weight: 800;
@@ -17,7 +17,6 @@ h2{
   color: #000000;
 }
 
-@import url("https://use.typekit.net/vxv4jde.css");
 h3{
   font-family: "degular-display", Arial, sans-serif;
   font-weight: 600;
@@ -26,7 +25,6 @@ h3{
   color: #000000;
 }
 
-@import url("https://use.typekit.net/vxv4jde.css");
 h4{
   font-family: "degular-display", Arial, sans-serif;
   font-weight: 400;
@@ -35,7 +33,6 @@ h4{
   color: #000000;
 }
 
-@import url("https://use.typekit.net/vxv4jde.css");
 p{
   font-family: "degular", Arial, sans-serif;
   font-weight: 400;
@@ -46,18 +43,14 @@ p{
   color: #000000;
 }
 
-p.media-query{
+p.return{
   font-family: "degular", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
-  text-align: center;
+  text-align: left;
   line-height: 1.4em;
   color: #000000;
-  width: 100%;
-  margin: 0 auto;
-  top: 50px;
-  position: relative;
 }
 
 a:link{
@@ -88,93 +81,9 @@ body{
 }
 
 #wrapper{
-  margin: auto;
-  height: 95%;
-  width: 93%;
-}
-
-button{
-  background-color: #FFF5DF;
-  border: 1px solid #000000;
-  color: #313695;
-  font-family: "degular", sans-serif;
-  text-transform: none;
-  padding: 1em 2em 1em 2em;
-}
-
-#hover-button{
-  background-color: #FFF5DF;
-  border: 1px solid #000000;
-  color: #313695;
-  font-family: "degular", Arial, sans-serif;
-  text-transform: none;
-  padding: 1em 2em 1em 2em;
-}
-
-#hover-button:hover{
-  background-color: #313695;
-  border: none;
-  color: #FFF5DF;
-  font-family: "degular", Arial, sans-serif;
-  text-transform: none;
-  padding: 1em 2em 1em 2em;
-}
-
-#magazine-layout{
-  margin:auto;
-  width:850px;
-  height:auto;
-}
-
-.container{
-  background-image: url(https://tuckerbrown2.github.io/gra-321/code-exercises/img/angsty-hallway.jpg);
-  background-size: cover;
-  height: 400px;
-  margin: 0 auto;
-  width: 50%;
-}
-
-h2.container{
-  font-family: "degular-display", Arial, sans-serif;
-  font-weight: 800;
-  font-style: normal;
-  font-size: 48px;
-  color: #FFF5DF;
-  text-align: center;
-}
-
-@media screen and (max-width: 1000px){
-  body{
-    background-color: #313695;
-  }
-  p.media-query{
-    color: #FFF5DF;
-  }
-}
-
-@media screen and (max-width:750px){
-  body{
-    background-color: HoneyDew;
-  }
-  p.media-query{
-    color: #000000;
-  }
-}
-
-@media screen and (max-width:500px){
-  body{
-    background-color: OldLace;
-  }
-  p.media-query{
-    color: #000000;
-  }
-}
-
-@media screen and (max-width:250px){
-  body{
-    background-color: OrangeRed;
-  }
-  p.media-query{
-    color: #FFF5DF;
-  }
+  margin: 0;
+  height: 100%;
+  width: auto;
+  padding-left: 100px;
+  padding-top: 50px;
 }
