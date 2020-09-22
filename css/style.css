@@ -1,5 +1,9 @@
 body{
-  background-color: HoneyDew;
+  background-color: OldLace;
+}
+
+body.background{
+  background-color: OldLace;
 }
 
 @import url("https://use.typekit.net/vxv4jde.css");
@@ -85,4 +89,5 @@ a:hover{
   width: auto;
   padding-left: 100px;
   padding-top: 50px;
+  background-color: OldLace;
 }

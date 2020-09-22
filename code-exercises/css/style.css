@@ -1,5 +1,9 @@
 body{
-  background-color: HoneyDew;
+  background-color: OldLace;
+}
+
+body.background{
+  background-color: OldLace;
 }
 
 @import url("https://use.typekit.net/vxv4jde.css");
@@ -155,6 +159,7 @@ h2.container{
 }
 
 @media screen and (max-width: 1000px){
+
   body{
     background-color: OrangeRed;
   }
@@ -166,7 +171,8 @@ h2.container{
   }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width: 500px){
+
   body{
     background-color: Blue;
   }
