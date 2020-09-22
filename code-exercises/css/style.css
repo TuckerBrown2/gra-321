@@ -1,5 +1,5 @@
 body{
-  background-color: #FFF5DF;
+  background-color: HoneyDew;
 }
 
 @import url("https://use.typekit.net/vxv4jde.css");
@@ -163,18 +163,6 @@ h2.container{
   }
   h3{
     color: #FFF5DF;
-  }
-}
-
-@media screen and (max-width:750px){
-  body{
-    background-color: OrangeRed;
-  }
-  h1{
-    color: white;
-  }
-  h3{
-    color: white;
   }
 }
 
