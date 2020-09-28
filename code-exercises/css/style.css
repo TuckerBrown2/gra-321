@@ -160,26 +160,26 @@ h2.container{
 
 @media screen and (max-width: 1000px){
 
-  body{
+  body.background{
     background-color: OrangeRed;
   }
-  h1{
+  .background h1{
     color: #FFF5DF;
   }
-  h3{
+  .background h3{
     color: #FFF5DF;
   }
 }
 
 @media screen and (max-width: 500px){
 
-  body{
+  body.background{
     background-color: Blue;
   }
-  h1{
+  .background h1{
     color: #000000;
   }
-  h3{
+  .background h3{
     color: #000000;
   }
 }
