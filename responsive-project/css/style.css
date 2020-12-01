@@ -1,7 +1,55 @@
-* {
+body.responsive{
+  background-color: Cornsilk;
+}
+
+.nav {
 
 }
 
-h1 {
+#logo {
+  float: left;
+  display: block;
+  height: 50px;
+  width: auto;
+}
 
+.navLinks {
+
+}
+
+.iced-drinks, .hot-drinks, .teas, .sandwiches, .specials {
+  width:85%;
+  margin: 0 auto;
+}
+
+.menuContent {
+
+}
+
+.menu-item-row {
+ width: 100%;
+ display:flex;
+ justify-content: space-between;
+ align-items:flex-start;
+ padding: 0 0 1rem 0;
+}
+
+.menu-item-row p {
+ width:30%;
+}
+
+.menu-item-row ul {
+ width:60%;
+ list-style-type: none;
+ float: right;
+ text-align:right;
+}
+
+.menu-item-row ul li {
+ width:30%;
+ display:inline-block;
+}
+
+p.drink-name {
+  
 }
