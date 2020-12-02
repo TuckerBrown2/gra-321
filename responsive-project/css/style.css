@@ -17,13 +17,13 @@ body.responsive{
 
 }
 
-.iced-drinks, .hot-drinks, .teas, .sandwiches, .specials {
-  width:85%;
-  margin: 0 auto;
-}
-
 .menuContent {
 
+}
+
+.cold-drinks, .hot-drinks, .teas, .sandwiches, .specials {
+  width:85%;
+  margin: 0 auto;
 }
 
 .menu-item-row {
@@ -51,5 +51,13 @@ body.responsive{
 }
 
 p.drink-name {
-  
+
+}
+
+p.replacements {
+
+}
+
+p.description {
+
 }
