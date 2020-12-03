@@ -1,12 +1,24 @@
-body.responsive{
-  background-color: Cornsilk;
+html {
+  --top-spacing: 100px;
 }
 
-#logo {
+body.responsive{
+  background-color: Cornsilk;
+  scroll-padding-top: var(--top-spacing);
+
+  margin: var(--top-spacing) auto;
+}
+
+#logo-nav {
   float: left;
   display: block;
   height: 50px;
   width: auto;
+}
+
+.first-image-container {
+  max-width: 100%;
+  height: auto;
 }
 
 #menu {
@@ -14,11 +26,12 @@ body.responsive{
 }
 
 .menuContent {
-
+  width:85%;
+  margin: 0 auto;
 }
 
 .cold-drinks, .hot-drinks, .teas, .sandwiches, .specials {
-  width:85%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -59,11 +72,14 @@ p.description {
 }
 
 .header {
-  background-color: #Cornsilk;
+  background-color: Cornsilk;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 3;
+  padding: 30px;
 }
 
 .header ul {
@@ -71,7 +87,7 @@ p.description {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #fff;
+  background-color: Cornsilk;
 }
 
 .header li a {
