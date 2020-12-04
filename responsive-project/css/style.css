@@ -9,6 +9,10 @@ body.responsive{
   margin: var(--top-spacing) auto;
 }
 
+h1 {
+  text-align: center;
+}
+
 #logo-nav {
   float: left;
   display: block;
@@ -22,13 +26,44 @@ body.responsive{
   padding-top: 30px;
 }
 
-#menu {
-  padding-top: 100px;
+#menu, #locations, #contact {
+  padding-top: 50px;
 }
 
 .menuContent {
   width:85%;
   margin: 0 auto;
+}
+
+.menu-1 {
+  grid-area: hot;
+}
+
+.menu-2 {
+  grid-area: cold;
+}
+
+.menu-3{
+  grid-area: teas;
+}
+
+.menu-4 {
+  grid-area: sandwiches;
+}
+
+.menu-5 {
+  grid-area: specials;
+}
+
+.menuContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 5rem;
+  grid-template-areas:
+    "hot hot cold cold"
+    "teas teas sandwiches sandwiches"
+    ". specials specials ."
 }
 
 .cold-drinks, .hot-drinks, .teas, .sandwiches, .specials {
