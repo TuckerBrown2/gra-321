@@ -3,12 +3,73 @@ body.responsive {
   background-color: Cornsilk;
 }
 
-h1 {
+h1.responsive {
+  font-family: "IBM Plex Serif", "p22-mackinac-pro", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
   text-align: center;
+  color: #2f4f4f;
+}
+
+h2.responsive {
+  font-family: "IBM Plex Serif", "p22-mackinac-pro", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  text-align: left;
+  color: #2f4f4f;
+}
+
+h3.responsive {
+  font-family: "neue-haas-grotesk-display", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 21px;
+  text-align: left;
+  color: #2f4f4f;
+}
+
+h4.responsive {
+  font-family: "Neue Haas Grotesk Display Pro", "neue-haas-grotesk-display", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 21px;
+  color: #2f4f4f;
+}
+
+h5.responsive {
+  font-family: "neue-haas-grotesk-display", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-style: 21px;
+  color: #2f4f4f;
 }
 
 a {
+  font-family: "neue-haas-grotesk-display", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: #2f4f4f;
+}
 
+a:hover {
+ font-weight: 700;
+}
+
+a.responsive {
+  font-family: "Neue Haas Grotesk Display Pro", "neue-haas-grotesk-display", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  text-align: justify;
+  color: #2f4f4f;
+}
+
+a.responsive:hover {
+ font-weight: 700;
+}
+
+.otherContent {
+  width: 85%;
+  margin: 0 auto;
 }
 
 #logo-nav {
@@ -21,11 +82,12 @@ a {
 .first-image-container {
   max-width: 100%;
   height: auto;
-  padding-top: 30px;
+  padding-top: 130px;
 }
 
-#menu, #locations, #contact {
-  padding-top: 50px;
+#menu, #locations, #contact, #other {
+  padding-top: 100px;
+  width: 100%;
 }
 
 .menuContent {
@@ -56,13 +118,14 @@ a {
 .menuContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 800px 800px 300px;
+  grid-template-rows: 700px 700px 300px;
   column-gap: 10rem;
-  row-gap: 2rem;
+  row-gap: 5rem;
   grid-template-areas:
     "hot hot cold cold"
     "teas teas sandwiches sandwiches"
     "specials specials . . ";
+  padding-top: 100px;
 }
 
 .teas-1 {
@@ -77,6 +140,27 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "one two";
+}
+
+.tea-item-row {
+ width: 100%;
+ display:flex;
+ justify-content: space-between;
+ align-items:flex-start;
+ padding: 0 0 1rem 0;
+}
+
+.tea-item-row p {
+ width:75%;
+}
+
+
+p.teas {
+  font-family: "neue-haas-grotesk-display", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 21px;
+  color: #2f4f4f;
 }
 
 .cold-drinks, .hot-drinks, .teas, .sandwiches, .specials {
@@ -181,23 +265,56 @@ a {
 .menu-item-row ul li {
  width:30%;
  display:inline-block;
+ font-family: "neue-haas-grotesk-display", Helvetica, Arial, sans-serif;
+ font-weight: 500;
+ font-style: normal;
+ font-size: 21px;
+ color: #2f4f4f;
 }
 
 p.drink-name {
+  font-family: "neue-haas-grotesk-display", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 21px;
+  text-align: left;
+  color: #2f4f4f;
 }
 
 p.replacements {
-  font-size: 14px;
+  width: 50%
+  font-family: "Neue Haas Grotesk Display Pro", "neue-haas-grotesk-display", Helvetica, Arial, sans-serif;
+  font-weight: 300;
   font-style: italic;
+  font-size: 21px;
+  color: #2f4f4f;
 }
 
 p.description {
+  font-family: "Neue Haas Grotesk Display Pro", "neue-haas-grotesk-display", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 21px;
+  text-align: left;
+  color: #2f4f4f;
+}
 
+.menu-item-row p.description {
+  width:100%;
+}
+
+.menu-item-row p.sandwich {
+  width:50%;
+  font-family: "neue-haas-grotesk-display", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 21px;
+  text-align: left;
+  color: #2f4f4f;
 }
 
 .locationsContent {
-  width:85%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -225,6 +342,8 @@ p.description {
   row-gap: 2rem;
   grid-template-areas:
     "map north hayden bio";
+  padding-top: 50px;
+  justify-items: start;
 }
 
 .contactContent {
@@ -246,12 +365,12 @@ p.description {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 400px;
-  column-gap: 20rem;
+  column-gap: 10rem;
   row-gap: 2rem;
   justify-content: space-between;
   grid-template-areas:
   "phone gallery";
-  padding: 0 0 1rem 0;
+  padding-top: 100px;
 }
 
 .contact-item-row {
@@ -263,27 +382,50 @@ p.description {
 }
 
 .contact-item-row p {
- width:30%;
+ width:75%;
 }
 
 .contact-item-row ul {
- width:60%;
+ width:100%;
  list-style-type: none;
  float: right;
  text-align:right;
 }
 
 .contact-item-row ul li {
- width:30%;
+ width:100%;
  display:inline-block;
 }
 
 p.contact-name {
-
+  font-family: "IBM Plex Serif", "p22-mackinac-pro", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  text-align: left;
+  color: #2f4f4f;
 }
 
 p.contact-email {
+  font-family: "IBM Plex Serif", "p22-mackinac-pro", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  text-align: left;
+  color: #2f4f4f;
+}
 
+a.contact {
+  font-family: "IBM Plex Serif", "p22-mackinac-pro", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  text-align: left;
+  color: #2f4f4f;
+}
+
+a.contact:hover {
+  font-weight: 600;
 }
 
 .gallery-1 {
@@ -337,6 +479,7 @@ p.contact-email {
   padding: 20px 20px;
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
+  color: #2f4f4f;
 }
 
 .header li a:hover, .header .nav-btn:hover {
@@ -441,5 +584,47 @@ p.contact-email {
   }
   .header .nav-icon {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .menuContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 700px 700px 600px 700px 300px;
+    row-gap: 2rem;
+    grid-template-areas:
+      "hot hot"
+      "cold cold"
+      "teas teas"
+      "sandwiches sandwiches"
+      "specials specials";
+    padding-top: 100px;
+  }
+  .locationsContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px 200px 400px;
+    column-gap: 10rem;
+    row-gap: 5rem;
+    justify-content: space-betweeen;
+    grid-template-areas:
+      "north"
+      "hayden"
+      "bio"
+      "map";
+    padding-top: 50px;
+  }
+  .contactContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 400px;
+    column-gap: 20rem;
+    row-gap: 10rem;
+    justify-content: space-between;
+    grid-template-areas:
+    "phone"
+    "gallery";
+    padding-top: 100px;
   }
 }
