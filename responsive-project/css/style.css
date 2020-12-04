@@ -58,12 +58,26 @@ h1 {
 .menuContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  column-gap: 5rem;
+  grid-template-rows: 800px 800px 800px;
+  column-gap: 10rem;
   grid-template-areas:
     "hot hot cold cold"
     "teas teas sandwiches sandwiches"
-    ". specials specials ."
+    ". specials specials .";
+}
+
+.teas-1 {
+  grid-area: one;
+}
+
+.teas-2 {
+  grid-area: two;
+}
+
+.teasContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "one two";
 }
 
 .cold-drinks, .hot-drinks, .teas, .sandwiches, .specials {
@@ -96,11 +110,12 @@ h1 {
 }
 
 p.drink-name {
-
+  font-size: 21px;
 }
 
 p.replacements {
-
+  font-size: 14px;
+  font-style: italic;
 }
 
 p.description {
