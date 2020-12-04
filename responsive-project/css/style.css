@@ -1,5 +1,7 @@
 /* CSS */
-
+body.responsive {
+  background-color: Cornsilk;
+}
 
 h1 {
   text-align: center;
@@ -50,12 +52,13 @@ h1 {
 .menuContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 800px 800px 800px;
+  grid-template-rows: 800px 800px 300px;
   column-gap: 10rem;
+  row-gap: 2rem;
   grid-template-areas:
     "hot hot cold cold"
     "teas teas sandwiches sandwiches"
-    "specials specials specials specials";
+    "specials specials . . ";
 }
 
 .teas-1 {
@@ -75,6 +78,81 @@ h1 {
 .cold-drinks, .hot-drinks, .teas, .sandwiches, .specials {
   width: 100%;
   margin: 0 auto;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 .menu-item-row {
@@ -113,144 +191,6 @@ p.replacements {
 p.description {
 
 }
-
-/* Slider CSS */
-
-.carousel {
-  position: relative;
-  margin-top: 26px;
-}
-
-.carousel-inner {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height:300px;
-}
-
-.carousel-open:checked + .carousel-item {
-  position: static;
-  opacity: 100;
-}
-
-/* FOR CLASSES .IMAGE-1, .IMAGE-2, AND .IMAGE-3, REPLACE THE
-BACKGROUND IMAGE URL WITH YOUR IMAGE URL. THIS SLIDER MUST
-HAVE 3 IMAGES TO FUNCTION PROPERLY */
-
-.image-1 {
-  background-image: url(https://tuckerbrown2.github.io/gra-321//responsive-project/img/Specials-A.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.image-2 {
-  background-image: url(https://tuckerbrown2.github.io/gra-321//responsive-project/img/Specials-B.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.image-3 {
-  background-image: url(https://tuckerbrown2.github.io/gra-321//responsive-project/img/Specials-Cap.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.carousel-item {
-  position: absolute;
-  opacity: 0;
-  height:300px;
-}
-
-.carousel-control {
-  background: rgba(0, 0, 0, 0.28);
-  border-radius: 50%;
-  color: #fff;
-  cursor: pointer;
-  display: none;
-  font-size: 40px;
-  height: 40px;
-  line-height: 35px;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-  cursor: pointer;
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  text-align: center;
-  width: 40px;
-  z-index: 10;
-}
-
-.carousel-control.prev {
-  left: 2%;
-}
-
-.carousel-control.next {
-  right: 2%;
-}
-
-.carousel-control:hover {
-  background: rgba(0, 0, 0, 0.8);
-  color: #aaaaaa;
-}
-
-#carousel-1:checked ~ .control-1,
-#carousel-2:checked ~ .control-2,
-#carousel-3:checked ~ .control-3 {
-  display: block;
-}
-
-.carousel-indicators {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  bottom:2%;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 10;
-}
-
-.carousel-indicators li {
-  display: inline-block;
-  margin: 0 5px;
-}
-
-.carousel-bullet {
-  color: #fff;
-  cursor: pointer;
-  display: block;
-  font-size: 35px;
-}
-
-.carousel-bullet:hover {
-  color: #aaaaaa;
-}
-
-#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
-#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-  color: #428bca;
-}
-
-#title {
-    width: 100%;
-    position: absolute;
-    padding: 0px;
-    margin: 0px auto;
-    text-align: center;
-    font-size: 27px;
-    color: rgba(255, 255, 255, 1);
-    font-family: 'Open Sans', sans-serif;
-    z-index: 9999;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
-}
-
-/* End slider CSS */
 
 .header {
   background-color: Cornsilk;
