@@ -55,7 +55,7 @@ h1 {
   grid-template-areas:
     "hot hot cold cold"
     "teas teas sandwiches sandwiches"
-    " . specials specials . ";
+    "specials specials specials specials";
 }
 
 .teas-1 {
@@ -138,21 +138,21 @@ BACKGROUND IMAGE URL WITH YOUR IMAGE URL. THIS SLIDER MUST
 HAVE 3 IMAGES TO FUNCTION PROPERLY */
 
 .image-1 {
-  background-image: url(https://tuckermbrown2.github.io/gra-321//responsive-project/img/Specials-A.jpg);
+  background-image: url(https://tuckerbrown2.github.io/gra-321//responsive-project/img/Specials-A.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .image-2 {
-  background-image: url(https://tuckermbrown2.github.io/gra-321//responsive-project/img/Specials-B.jpg);
+  background-image: url(https://tuckerbrown2.github.io/gra-321//responsive-project/img/Specials-B.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .image-3 {
-  background-image: url(https://tuckermbrown2.github.io/gra-321//responsive-project/img/Specials-Cap.jpg);
+  background-image: url(https://tuckerbrown2.github.io/gra-321//responsive-project/img/Specials-Cap.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -235,6 +235,19 @@ HAVE 3 IMAGES TO FUNCTION PROPERLY */
 #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
   color: #428bca;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
 }
 
 /* End slider CSS */
