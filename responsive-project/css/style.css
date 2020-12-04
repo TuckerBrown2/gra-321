@@ -234,20 +234,24 @@ p.description {
 
 .contact-1 {
   grid-area: phone;
+  float: left;
 }
 
 .contact-2 {
   grid-area: gallery;
+  float: right;
 }
 
 .contactContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 400px;
-  column-gap: 10rem;
+  column-gap: 20rem;
   row-gap: 2rem;
+  justify-content: space-between;
   grid-template-areas:
   "phone gallery";
+  padding: 0 0 1rem 0;
 }
 
 .contact-item-row {
@@ -300,10 +304,10 @@ p.contact-email {
 
 .galleryContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  column-gap: 2rem;
-  row-gap: 2rem;
+  grid-template-columns: 195px 195px;
+  grid-template-rows: 195px 195px;
+  column-gap: 10px;
+  row-gap: 10px;
   grid-template-areas:
   "one two"
   "three four";
