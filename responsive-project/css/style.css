@@ -7,6 +7,10 @@ h1 {
   text-align: center;
 }
 
+a {
+
+}
+
 #logo-nav {
   float: left;
   display: block;
@@ -221,6 +225,88 @@ p.description {
   row-gap: 2rem;
   grid-template-areas:
     "map north hayden bio";
+}
+
+.contactContent {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.contact-1 {
+  grid-area: phone;
+}
+
+.contact-2 {
+  grid-area: gallery;
+}
+
+.contactContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px;
+  column-gap: 10rem;
+  row-gap: 2rem;
+  grid-template-areas:
+  "phone gallery";
+}
+
+.contact-item-row {
+ width: 100%;
+ display:flex;
+ justify-content: space-between;
+ align-items:flex-start;
+ padding: 0 0 1rem 0;
+}
+
+.contact-item-row p {
+ width:30%;
+}
+
+.contact-item-row ul {
+ width:60%;
+ list-style-type: none;
+ float: right;
+ text-align:right;
+}
+
+.contact-item-row ul li {
+ width:30%;
+ display:inline-block;
+}
+
+p.contact-name {
+
+}
+
+p.contact-email {
+
+}
+
+.gallery-1 {
+  grid-area: one;
+}
+
+.gallery-2 {
+  grid-area: two;
+}
+
+.gallery-3 {
+  grid-area: three;
+}
+
+.gallery-4: {
+  grid-area: four;
+}
+
+.galleryContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  grid-template-areas:
+  "one two"
+  "three four";
 }
 
 .header {
